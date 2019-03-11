@@ -1,15 +1,15 @@
 <h1>Create a new Todo</h1>
 <form action = "<%= todos_url%>" method = "POST">
   <input type="hidden" name ="authenticity_token" value = "<%=form_authenticity_token%>">
-  <label>Name:
-    <input type="text" name="todo[name]" value = "">
-  </label>
-  <br>
-  <br>
+      <label>Name:
+        <input type="text" name="todo[name]" value = "">
+      </label>
+        <br>
+        <br>
     <label>Description:
-    <br>
-    <textarea name="todo[description]" id="" cols="30" rows="10"></textarea>
-  </label>
+      <br>
+      <textarea name="todo[description]" id="" cols="30" rows="10"></textarea>
+    </label>
   <br>
   <input type="submit" value="Create Todo">
   
