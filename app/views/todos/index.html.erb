@@ -1,0 +1,11 @@
+<h1>Listings all Todos</h1>
+<ul>
+  <%@todos.each do |todo|%>
+  <li><%=link_to todo.name, todo_url(todo)%>
+      <%=link_to "Edit", edit_todo_url(todo)%>
+  </li>
+  <%end%>
+</ul>
+<p>
+  <%= link_to "Create a Todo", new_todo_url%>
+</p>

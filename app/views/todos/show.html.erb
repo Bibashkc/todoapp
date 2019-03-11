@@ -1,2 +1,5 @@
 <h1><%=@todo.name%></h1>
 <h3><%=@todo.description%></h3>
+
+ <%=link_to "Edit", edit_todo_url(@todo)%> |
+  <%=link_to "Todos", todos_url%>
