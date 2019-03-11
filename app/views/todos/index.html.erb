@@ -3,6 +3,7 @@
   <%@todos.each do |todo|%>
   <li><%=link_to todo.name, todo_url(todo)%>
       <%=link_to "Edit", edit_todo_url(todo)%>
+      <%=link_to "Delete", todo_url(todo), method: :delete, data: {confirm: "Are you sure?"}%>
   </li>
   <%end%>
 </ul>
